@@ -5,9 +5,9 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <div class="container">
+        <div class="flex-container">
             <div class="details">
-                <div class="now-playing">Play ing Unstoppaple</div>
+                <div class="now-playing">Playing Unstoppaple</div>
                 <div class="track-art"></div>
                 <div class="track-name">Track name</div>
                 <div class="track-artist">Track Artist</div>
@@ -16,24 +16,26 @@
                 <div class="previous">
                     <i class="fas fa-chevron-circle-left"></i>
                 </div>
-                <div class="play-button">
+                <div class="playpause-track">
                     <i class="fas fa-play"></i>
                 </div>
                 <div class="next">
                     <i class="fas fa-chevron-circle-right"></i>
                 </div>
             </div>
-            <div class="slider">
-                <div class="current-time">00:00</div>
-                <input type="range" min="1" max="100"
-                    value="0" class="seek_slider" onchange="seekTo()">
-                <div class="total-duration">00:00</div>
-            </div>
-            <div class="slider">
-                <i class="fas fa-volume-down"></i>
-                <input type="range" min="1" max="100"
-                    value="99" class="volume_slider" onchange="setVolume()">
-                <i class="fas fa-volume-up"></i>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="current-time">00:00</div>
+                    <input type="range" min="1" max="100"
+                        value="0" class="seek_slider" onchange="seekTo()">
+                    <div class="total-duration">00:00</div>
+                </div>
+                <div class="slider">
+                    <i class="fas fa-volume-down"></i>
+                    <input type="range" min="1" max="100"
+                        value="99" class="volume_slider" onchange="setVolume()">
+                    <i class="fas fa-volume-up"></i>
+                </div>
             </div>
         </div>        
     </body>

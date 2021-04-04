@@ -1,0 +1,55 @@
+body {
+    background-color: lightgreen;
+    /* Smoothly transition the background color */
+    transition: background-color .5s;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.track-art {
+    margin: 25px;
+    width: 250px;
+    height: 250px;
+    background-image: url("https://source.unsplash.com/Qrspubmx6kE/640x360");
+    border-radius: 15%;
+    background-position: center;
+    background-size: cover;
+}
+/* Changing the font sizes to suitable ones */
+.now-playing {
+    font-size: 1rem;
+  }
+    
+  .track-name {
+    font-size: 3rem;
+  }
+    
+  .track-artist {
+    font-size: 1.5rem;
+}
+/* Using flex with the row direction to
+   align items in a horizontal direction */
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.playpause-track,
+.prev-track,
+.next-track {
+  padding: 25px;
+  opacity: 0.8;
+  
+  /* Smoothly transition the opacity */
+  transition: opacity .2s;
+}
+/* Define the slider width so that it scales properly */
+.slider_container {
+    width: 75%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
